@@ -124,6 +124,6 @@ for (i = 0; i < 105; i += 1) {
 
 document.write(html);
 ```
-
+![alt tag](https://raw.githubusercontent.com/RizAli/JavaScripts-Loops-Arrays-Objects/master/images/forloopColors.png)
 
 
