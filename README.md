@@ -77,5 +77,30 @@ do {
 document.write(" <p> You Guessed the number! <p>")
 document.write("It took you " +  guessCount + " try/tries to guess the number: " + randomNumber );
 ```
+for loop:
+---------------
+
+for (var counter =0; counter <10;  counter+=1 ) {
+  document.write( counter );
+}
+
+commonly used variable for for loops are i and j. see example below
+
+for (var i =1;  i <=10; i+=1) {
+  document.write(i);
+}
+
+```
+var html = '';
+
+for ( var i = 1; i <= 10; i += 1) {
+  html += '<div>' + i + '</div>';
+}
+
+document.write(html);
+
+```
+
+
 
 
