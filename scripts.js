@@ -3,7 +3,7 @@ function randomNumbers(upper){
 }
 
 var counter = 0;
-while (counter < 10) {
+while (counter < 100000) {
   var randNum = randomNumbers(20);
   document.write(randNum + " ");
   counter += 1;
