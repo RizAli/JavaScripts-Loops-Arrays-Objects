@@ -5,11 +5,11 @@ var blue;
 var rgbColor;
 
 function getRGB( red, green, blue ) {
-  return Math.floor(Math.random() * 256 )
+  return Math.floor(Math.random() * 256 );
 }
 
 
-for (i=0; i<10; i+=1) {
+for (i = 0; i < 105; i += 1) {
   red = getRGB();
   green = getRGB();
   blue = getRGB();
