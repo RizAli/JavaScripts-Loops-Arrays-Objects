@@ -207,7 +207,7 @@ console.log( daysString );
 It returns
 Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 ```
-concat
+concat();
 
 ```
 var currentStudents = ["Anabia", "Bash", "Cathy"];
@@ -217,7 +217,6 @@ var allStudents = currentStudents.concat( newStudents );
 
 ```
 indexOf();
-----------
 
 ```
 var fruit = ['Apple', 'Orange', 'Grapefruit'];
@@ -227,7 +226,7 @@ it will return position 2.
 if the item is not in the list the value would be -1
 ```
 
-Search the store:
+### Search the store:
 
 
 ```
