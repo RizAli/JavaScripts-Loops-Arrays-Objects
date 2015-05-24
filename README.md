@@ -380,7 +380,7 @@ Secondly Print out each student record in an array, It should print out each pro
 </html>
 
 ```
-![alt tag]()
+![alt tag](https://raw.githubusercontent.com/RizAli/JavaScripts-Loops-Arrays-Objects/master/images/studentsSearch.png)
 
 students_report.js
 
