@@ -127,3 +127,143 @@ document.write(html);
 ![alt tag](https://raw.githubusercontent.com/RizAli/JavaScripts-Loops-Arrays-Objects/master/images/forloopColors.png)
 
 
+Array:
+------
+Array is a common data structure for holding multiple pieces of information.
+
+reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+```
+Simple array example and indices
+
+players = ['riz', 'ainy', 'eeshal','anabia']
+console.log(0);
+```
+Adding and Removing items from an array
+
+```
+Adding items:
+
+var numbers = [1,2,3,4,5,6]
+numbers.push(7,8,9);  // add an item at the end of the array
+numbers.unshift(0); //Add an item at the beginning
+
+Removing Items:
+
+nums.shift(); // removes the first item.
+nums.pop();   // removes the last item.
+```
+
+Array and loop:
+
+```
+students = ["A", "B", "C", "D"];
+
+for (var i= 0;  i < students.length; i+=1) {
+  console.log(students[i]);
+}
+
+
+A function that turns array into a HTML list
+
+
+var playList = [
+  'I Did It My Way',
+  'Respect',
+  'Imagine',
+  'Born to Run',
+  'Louie Louie',
+  'Maybellene'
+];
+
+function print(message) {
+  document.write(message);
+}
+
+function printList( list ) {
+  var listHTML = '<ol>';
+  for ( var i=0; i < list.length; i += 1) {
+    listHTML += '<li>' + list[i] + '</li>';
+  }
+  listHTML += '</ol>';
+  print(listHTML);
+}
+
+printList(playList);
+
+
+```
+
+Some Useful Array methods
+--------------------------
+
+.join(',');
+```
+var daysInWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+var daysString = daysInWeek.join(',');
+
+console.log( daysString );
+It returns
+Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+```
+concat
+
+```
+var currentStudents = ["Anabia", "Bash", "Cathy"];
+var newStudents = ["Dan", "Eva", "Fiona"];
+
+var allStudents = currentStudents.concat( newStudents );
+
+```
+indexOf();
+----------
+
+```
+var fruit = ['Apple', 'Orange', 'Grapefruit'];
+var position = fruit.indexOf('Grapefruit');
+
+it will return position 2.
+if the item is not in the list the value would be -1
+```
+
+Search the store:
+
+
+```
+var inStock = [ 'apples', 'eggs', 'milk', 'cookies', 'cheese', 'bread', 'lettuce', 'carrot', 'broccoli', 'pizza', 'potato', 'crackers', 'onion', 'tofu', 'frozen dinner', 'cucumber'];
+var search;
+
+function print(message) {
+  document.write( '<p>' + message + '</p>');
+}
+
+while ("quit"){
+  search = prompt("Search for a product in our store. Type 'list' to show all  items, type 'quit' to exit")
+
+  if( search === 'quit' ){
+    break;
+  } else if ( search === 'list' ) {
+
+    print(inStock.join(', '));
+
+  } else {
+    if ( inStock.indexOf( search ) > -1 ) {
+      print('Yes we have ' + search + ' in the store');
+    } else {
+      print( search + ' is not in stock. ');
+    }
+  }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
