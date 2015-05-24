@@ -9,7 +9,7 @@ body {
   font: Helvetica Neue, Helvectica, Arial, serif;
   font-weight: 300;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: .1em;
   color: #8d9aa5;
 }
 
@@ -29,6 +29,8 @@ a:visited {
 h1, h2, h3 {
   font-weight: 500;
   color: #384047;
+
+
 }
 
 h1 {
