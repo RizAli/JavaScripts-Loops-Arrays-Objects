@@ -345,9 +345,117 @@ for ( var prop in person ){
 
 ```
 
+Students Search app :
+--------------------
+students.html file
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1> Students </h1>
+
+<p> Good project to demonstrate an undrstanding of loops, arrays and objects </p>
+<hr>
+Student object will hold the following properties and there should be at least 5 student objects. <br><br>
+<ol>
+  <li> Name </li>
+  <li> Track (e.g IOS, Web Design, Front End Development, Etc) </li>
+  <li> Achievement (will hold a number value) </li>
+  <li> Points (Holds the number of points a student has earned) </li>
+</ol>
+
+Secondly Print out each student record in an array, It should print out each property.
+<div id="output">
+
+</div>
+<hr>
+<script src="students.js"></script>
+<script src="students_report.js"></script>
+</body>
+</html>
+
+```
+![alt tag]()
+
+students_report.js
+
+```
+// Access students record
+var message = '';
+var students;
+var search;
+
+function print(message) {
+  var outputDiv = document.getElementById('output');
+  outputDiv.innerHTML =  message;
+}
 
 
+function getStudentReport ( student ) {
+  var report = ( "<h2> Student: " +  student.name + "</h2>" );
+  report += ( "<h2> Track: " +  student.track + "</h2>" );
+  report += ( "<h2> Achievement: " +  student.achievement + "</h2>" );
+  report += ( "<h2> Points: " +  student.points + "</h2>" );
+  return report;
+}
 
+
+while (true) {
+  search = prompt('Search student record: Type a name [Riz] (or type quit to end)');
+  if (search === null || search.toLowerCase() === 'quit') {
+    break;
+  }
+  for ( i = 0; i < students.length; i += 1 ) {
+  student = students[i];
+  if (student.name === search ) {
+    message = getStudentReport( student );
+    print(message);
+  }
+ }
+}
+
+```
+students.js file
+```
+// create data structure
+var students = [
+  {
+    name: "Riz",
+    track: "Web Design",
+    achievement: '5',
+    points: '110'
+  },
+  {
+    name: "Ainy",
+    track: "Web Design",
+    achievement: '5',
+    points: '110'
+  },
+  {
+    name: "Eeshal",
+    track: "Web Design",
+    achievement: '5',
+    points: '110'
+  },
+  {
+    name: "Anabia",
+    track: "Web Design",
+    achievement: '5',
+    points: '110'
+  },
+  {
+    name: "Shakir",
+    track: "Web Design",
+    achievement: '5',
+    points: '110'
+  }
+];
+```
 
 
 
