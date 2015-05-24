@@ -290,12 +290,59 @@ printSongs(playList);
 
 
 
+Objects:
+---------
 
+Java script is an object based or object oriented programing.
+Functions, arrays, strings, numbers, boolean are either objects or can be treated as objects.
 
+- Object is something that has properties and methods.
+- A property is like a variable that belongs to the object.
+- A method is something that object can do or that can be done to the object.
 
+Store and Access data:
+variable can store single value.
+Array can store list of values.
 
+JS Objec allows us to store data in key value pairs or property value pairs.
 
+The curly braces allows us to create an object.
 
+var student = {
+  name: "Riz",
+  country : "UK",
+  makersAcademyStudent: true,
+  skills: ['Ruby', 'JavaScript', 'CSS']
+};
+
+alert(student.name);
+
+Assig new value:
+
+student.name = 'Ainy';
+
+Create new property:
+
+student.grade = 'A *';
+
+Accessing Object properties using " for in "
+---------------------------------------------
+console
+When using for in loop, one has to use [] notation to access the value
+
+```
+var person = {
+  name: 'Riz',
+  country: 'UK',
+  age: 50,
+  MAstudent: true
+};
+
+for ( prop in person ){
+  console.log( prop, ': ', person[prop]);
+}
+
+```
 
 
 
