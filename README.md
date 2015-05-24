@@ -239,6 +239,7 @@ function print(message) {
 
 while ("quit"){
   search = prompt("Search for a product in our store. Type 'list' to show all  items, type 'quit' to exit")
+  search = search.tolowerCase();
 
   if( search === 'quit' ){
     break;
