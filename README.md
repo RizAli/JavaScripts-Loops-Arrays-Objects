@@ -307,7 +307,7 @@ Array can store list of values.
 JS Objec allows us to store data in key value pairs or property value pairs.
 
 The curly braces allows us to create an object.
-
+```
 var student = {
   name: "Riz",
   country : "UK",
@@ -324,6 +324,7 @@ student.name = 'Ainy';
 Create new property:
 
 student.grade = 'A *';
+```
 
 Accessing Object properties using " for in "
 ---------------------------------------------
@@ -338,11 +339,16 @@ var person = {
   MAstudent: true
 };
 
-for ( prop in person ){
+for ( var prop in person ){
   console.log( prop, ': ', person[prop]);
 }
 
 ```
+
+
+
+
+
 
 
 
